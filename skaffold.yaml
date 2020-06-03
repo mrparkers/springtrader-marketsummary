@@ -1,3 +1,4 @@
+  
 apiVersion: skaffold/v1beta11
 kind: Config
 build:
@@ -15,5 +16,6 @@ deploy:
         setValueTemplates:
           istioDomain: "{{.ISTIO_DOMAIN}}"
           productName: "{{.PRODUCT_NAME}}"
-       setValues:
+        setValues:
           hpa.enabled: true
+          canary.enabled: true
