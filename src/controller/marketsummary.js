@@ -3,7 +3,7 @@ const { convertCurrency } = require("../service/currency-service");
 const { getLocaleFromRequest, localeIsValid } = require("../util/helpers");
 const boom = require("@hapi/boom");
 
-console.log("yo1");
+console.log("yo2");
 
 const marketsummary = (server) => {
     server.route({
